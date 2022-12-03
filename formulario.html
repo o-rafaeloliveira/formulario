@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
     <title>Formulário</title>
 </head>
 <body>
     <div>
-        <h1>Cadastro de Alunos</h1>
-        <h2>Lisbon School of Design</h2>
+        <h1 id="titulo">Cadastro de Alunos</h1>
+        <h2 id="subtitulo">Lisbon School of Design</h2>
         <p>Insira as informações:</p>
     </div>
 
     <form>
-        <fieldset>
-            <div>
+        <fieldset class="grupo">
+            <div class="campo">
                 <label for="nome">Seu Nome</label>
                 <input type="text" name="nome" id="nome" required>
                 <label for="apelido">Apelido</label>
@@ -53,8 +59,8 @@
         </div>
 
         <!--Checkbox-->
-        <fieldset>
-        <div>
+        <fieldset class="grupo">
+        <div id="check">
             <label>Quais são seus conhecimentos?</label>
             <br><br>
             <input type="checkbox" id="tech1" name="tech1" value="html">

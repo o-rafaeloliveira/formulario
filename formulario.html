@@ -21,14 +21,14 @@
     </div>
 
     <form>
-        <fieldset class="grupo">
+        <div class="grupo">
             <div class="campo">
                 <label for="nome">Seu Nome</label>
                 <input type="text" name="nome" id="nome" required>
                 <label for="apelido">Apelido</label>
                 <input type="text" name="apelido" id="apelido" required>
             </div>
-        </fieldset>
+        </div>
 
         <div>
             <label for="email">Seu e-mail</label>
@@ -48,6 +48,8 @@
             </label>
         </div>
 
+    
+
         <div>
             <label for="turno">Turno</label>
             <select id="turno" required>
@@ -58,11 +60,13 @@
             </select>
         </div>
 
+        <br>
+
         <!--Checkbox-->
-        <fieldset class="grupo">
+        <div class="grupo">
         <div id="check">
             <label>Quais são seus conhecimentos?</label>
-            <br><br>
+            <br>
             <input type="checkbox" id="tech1" name="tech1" value="html">
             <label for="tech1">HTML</label>
             <input type="checkbox" id="tech2" name="tech2" value="css">
@@ -74,15 +78,17 @@
             <input type="checkbox" id="tech5" name="tech5" value="C++">
             <label for="tech1">C++</label>
         </div>
-        </fieldset>
-        
+    </div>
+
+    <br>
+
         <div>
         <label for="sobre"><strong>Conte sobre sí:</strong></label>
         <br><br>
         <textarea rows="5" style="width: 300px;" id="sobre" name="sobre"></textarea>
         </div>
 
-        <button type="submit" onsubmit="">Enviar</button>
+        <button class="botao" type="submit" onsubmit="">Enviar</button>
     </form>
 </body>
 </html>
